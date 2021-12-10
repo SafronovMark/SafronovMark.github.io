@@ -1,0 +1,25 @@
+<script>
+
+    function click1() {
+        let f1 = document.getElementsByName("field1");
+        let f2 = document.getElementsByName("field2");
+        let r = document.getElementById("result");
+        r.innerHTML = f1[0].value * f2[0].value;
+        return false;
+    }
+
+</script>
+<style>
+    body{
+        background-color: #299;
+    }
+form{
+    padding-top: 50px;
+    padding-left: 50px;
+}
+</style>
+<div id="result"></div>
+<form>
+    <input placeholder="цена товара" name="field1" type="text">
+    <input placeholder="Количество товараname" name="field2" type="text">
+    <button id="button1" onclick="return click1();">Посчитать стоимость</button></form>
